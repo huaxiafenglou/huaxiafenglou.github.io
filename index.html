@@ -1,214 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>华夏凤楼</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>华夏凤楼</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>:root { color-scheme: light; --ink: #39251f; --muted: #78645b; --paper: #fffaf1; --paper-deep: #f7ecd9; --red: #a8292b; --red-dark: #7f171d; --gold: #c79a4b; --line: #e8d4b3; } *, *::before, *::after { box-sizing: border-box; } html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; } body { margin: 0; min-width: 280px; min-height: 100vh; padding: clamp(12px, 3.5vw, 34px); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; line-height: 1.75; color: var(--ink); overflow-wrap: anywhere; background: radial-gradient(ellipse at 50% 0%, rgba(199,154,75,.18), transparent 42%), repeating-linear-gradient(135deg, rgba(168,41,43,.018) 0 1px, transparent 1px 9px), #f4ead9; } a { -webkit-tap-highlight-color: transparent; } .container { width: min(100%, 720px); margin-inline: auto; } .header { position: relative; padding: clamp(28px, 6vw, 48px) 14px clamp(25px, 5vw, 38px); margin-bottom: 18px; text-align: center; border: 1px solid rgba(199,154,75,.58); border-radius: 20px; background: linear-gradient(145deg, #fffaf0, #f6e6c9); box-shadow: 0 10px 28px rgba(88,47,29,.09), inset 0 0 0 5px rgba(255,255,255,.55); } .header::before, .header::after { content: "✦"; position: absolute; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: clamp(18px, 4vw, 26px); } .header::before { left: clamp(12px, 5vw, 38px); } .header::after { right: clamp(12px, 5vw, 38px); } .header h1 { margin: 0; color: var(--red-dark); font-family: "Songti SC", "STSong", "SimSun", serif; font-size: clamp(25px, 6vw, 39px); font-weight: 800; line-height: 1.35; letter-spacing: .12em; text-shadow: 0 1px 0 #fff; overflow-wrap: anywhere; } .card { position: relative; margin-bottom: 16px; padding: clamp(17px, 4.5vw, 28px); border: 1px solid var(--line); border-radius: 15px; background: rgba(255,250,241,.96); box-shadow: 0 7px 20px rgba(88,47,29,.07); overflow: hidden; } .card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--red-dark), var(--gold), var(--red)); } .card h2 { margin: 0 0 15px; padding-bottom: 10px; border-bottom: 1px solid #ead9bd; color: var(--red-dark); font-family: "Songti SC", "STSong", "SimSun", serif; font-size: clamp(18px, 3.8vw, 22px); line-height: 1.45; } .notice { padding: 13px 15px; border: 1px solid #e7d0a5; border-left: 4px solid var(--gold); border-radius: 8px; background: #fbf0d9; color: #60452b; font-size: clamp(14px, 2.8vw, 16px); } .link-button { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 54px; margin-top: 12px; padding: 14px 16px; border: 1px solid #d8b777; border-radius: 10px; background: #fff7e8; color: var(--red-dark); font-size: clamp(14px, 2.9vw, 16px); font-weight: 700; text-align: center; text-decoration: none; overflow-wrap: anywhere; word-break: break-word; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; touch-action: manipulation; } .link-button:hover { background: #fff0d4; box-shadow: 0 5px 14px rgba(127,23,29,.12); transform: translateY(-1px); } .link-button:focus-visible { outline: 3px solid #d6ad61; outline-offset: 3px; } .primary { border: 1px solid #d8ae60; background: linear-gradient(115deg, #8d1d25, #b53232 58%, #8d1d25); color: #fff9ed; box-shadow: inset 0 1px 0 rgba(255,255,255,.18), 0 5px 12px rgba(127,23,29,.15); } .primary:hover { background: linear-gradient(115deg, #74151c, #9f252b 58%, #74151c); color: #fff; } .muted { margin: 8px 0 0; color: var(--muted); font-size: 14px; } .footer { padding: 20px 8px 10px; color: #806b59; font-size: 13px; text-align: center; } @media (max-width: 480px) { body { padding: 10px 10px max(16px, env(safe-area-inset-bottom)); } .header { padding: 25px 36px 24px; border-radius: 15px; } .header::before { left: 10px; } .header::after { right: 10px; } .card { margin-bottom: 12px; border-radius: 12px; } .link-button { min-height: 52px; padding: 13px 11px; } } @media (max-width: 320px) { body { padding-inline: 7px; } .header { padding-inline: 29px; } .header h1 { letter-spacing: .06em; } .card { padding: 13px; } .notice { padding: 11px; } } @media (min-width: 900px) { .container { max-width: 720px; } } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }</style></head>
+  
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>华夏凤楼</h1>
+      </header>
+      <br>
+      <section class="card">
+        <h2>📢 最新公告</h2>
+        <div class="notice">本页面将为您更新提供 【华夏凤楼】 最新网址，请收藏</div>
+      </section>
+      <br>
+      <section class="card">
+        <h2>🌐 最新地址</h2>
+        <br>
+        <a class="link-button primary" href="https://huaxia58.top" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span>https://huaxia58.top</span>
+        </a>
+        <br>
+      </section>
+      <br>
+      <section class="card">
+        <h2>🌐 海外永久地址</h2>
+        <br>
+        <a class="link-button primary" href="https://huaxiafeng.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+          <span>https://huaxiafeng.com</span>
+        </a>
+        <br>
+      </section>
+      <br>
+      <section class="card">
+        <h2>⭐ 收藏与帮助</h2>
+        <p class="muted">请收藏本页面，以便日后快速访问。 请注意核对域名，避免访问仿冒网站。</p>
+      </section>
+      <br>
+      <footer class="footer">Copyright © 2026 华夏凤楼</footer>
+    </main>
+  </body>
 
-    html {
-      -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-    }
-
-    body {
-      margin: 0;
-      min-width: 280px;
-      min-height: 100vh;
-      padding: 20px 14px;
-      font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
-      line-height: 1.8;
-      color: #edf0ff;
-      background: linear-gradient(145deg, #101426, #252e50);
-      overflow-wrap: anywhere;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    .header {
-      padding: 30px 12px;
-      text-align: center;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: clamp(23px, 5vw, 32px);
-    }
-
-    .header p {
-      color: #b8c2e0;
-      font-size: 14px;
-    }
-
-    .card {
-      margin-bottom: 16px;
-      padding: clamp(16px, 4vw, 26px);
-      border: 1px solid rgba(255, 255, 255, .1);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, .06);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
-    }
-
-    .card h2 {
-      margin: 0 0 14px;
-      font-size: 19px;
-    }
-
-    .notice {
-      padding: 12px 14px;
-      border-left: 3px solid #8da0ff;
-      border-radius: 4px 10px 10px 4px;
-      background: rgba(141, 160, 255, .1);
-      color: #d4dcf7;
-      font-size: 14px;
-    }
-
-    .link-button {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      width: 100%;
-      min-height: 54px;
-      margin-top: 12px;
-      padding: 13px 16px;
-      border: 1px solid rgba(255, 255, 255, .12);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, .06);
-      color: #dce3ff;
-      font-size: 15px;
-      overflow-wrap: anywhere;
-      word-break: break-word;
-      transition: background .2s ease;
-    }
-
-    .link-button:hover {
-      background: rgba(255, 255, 255, .12);
-    }
-
-    .primary {
-      justify-content: center;
-      border: 0;
-      background: linear-gradient(100deg, #617cff, #9668ed);
-      color: #fff;
-      font-weight: 700;
-    }
-
-    .primary:hover {
-      background: linear-gradient(100deg, #7189ff, #a17afa);
-    }
-
-    .muted {
-      margin-top: 8px;
-      color: #9ba8cb;
-      font-size: 13px;
-    }
-
-    .footer {
-      padding: 20px 8px;
-      text-align: center;
-      color: #8994b2;
-      font-size: 12px;
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 12px 10px;
-        font-size: 15px;
-      }
-
-      .header {
-        padding: 24px 8px;
-      }
-
-      .card {
-        border-radius: 15px;
-      }
-
-      .card h2 {
-        font-size: 17px;
-      }
-
-      .link-button {
-        min-height: 50px;
-        font-size: 14px;
-      }
-    }
-
-    @media (max-width: 320px) {
-      body {
-        padding: 8px 6px;
-      }
-
-      .card {
-        padding: 13px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
-      }
-    }
-  </style>
-</head>
-<body>
-  <main class="container">
-    <header class="header">
-      <h1>华夏凤楼</h1>
-    </header>
-
-    <section class="card">
-      <h2>📢 最新公告</h2>
-      <div class="notice">本页面将为您更新提供 【华夏凤楼】 最新网址，请收藏</div>
-    </section>
-
-    <section class="card">
-      <h2>🌐 最新地址</h2>
-
-      <a class="link-button primary"
-         href="https://huaxia58.top"
-         target="_blank"
-         rel="noopener noreferrer" style="text-decoration: none;">
-        <span>https://huaxia58.top</span>
-      </a>
-
-    </section>
-
-    <section class="card">
-      <h2>🌐 海外永久地址</h2>
-
-      <a class="link-button primary"
-         href="https://huaxiafeng.com"
-         target="_blank"
-         rel="noopener noreferrer" style="text-decoration: none;">
-        <span>https://huaxiafeng.com</span>
-      </a>
-
-    </section>
-
-    <section class="card">
-      <h2>⭐ 收藏与帮助</h2>
-      <p class="muted">
-        请收藏本页面，以便日后快速访问。
-        请注意核对域名，避免访问仿冒网站。
-      </p>
-    </section>
-
-    <footer class="footer">
-      Copyright © 2026 华夏凤楼
-    </footer>
-  </main>
-</body>
 </html>
